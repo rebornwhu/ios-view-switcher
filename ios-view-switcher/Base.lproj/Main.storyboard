@@ -16,16 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-L0-loY">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-L0-loY">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <animations/>
                                 <items>
-                                    <barButtonItem title="Item" id="z3S-aZ-vjd"/>
+                                    <barButtonItem title="Switch Views" id="z3S-aZ-vjd">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="6bM-os-rF8"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f7o-L0-loY" secondAttribute="bottom" id="3oH-5p-BXY"/>
+                            <constraint firstAttribute="trailing" secondItem="f7o-L0-loY" secondAttribute="trailing" id="R9u-WF-2mE"/>
+                            <constraint firstItem="f7o-L0-loY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rO8-8e-zau"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
